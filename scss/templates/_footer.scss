@@ -1,0 +1,25 @@
+.footer{
+    &-item{
+        &__top{
+            border-top: 1px solid #121214;
+            border-bottom: 1px solid #121214;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    .logo{
+        &-img{
+            max-width: 65px;
+        }
+    }
+    &-copyrate{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 126.69%;
+        color: #787878;
+    }
+}

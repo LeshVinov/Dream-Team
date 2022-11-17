@@ -1,0 +1,108 @@
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #121214;
+    background: #E5E5E5;
+}
+
+ul,
+a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section{
+    padding: 10px 0;
+    &-title{
+        text-align: center;
+        position: relative;
+        font-weight: 700;
+        font-size: 36px;
+    }
+}
+
+.img{
+    &-logo{
+        max-width: 80px;
+        margin-left: 10px;
+    }
+}
+
+.logo{
+    &-link{
+        color: #fff;
+    }
+}
+
+input{
+    font-family: inherit; 
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0; 
+    border: 1px solid #000000;
+    border-radius: 5px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    padding: 20px 30px;
+    &:focus{
+        background-color: #fff;
+        border: 1px solid #000000;
+        outline: none;
+        border-radius: 5px;
+        box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+    }
+}
+
+input[type="submit"]{
+    padding: 25px;
+    background: #037E8C;
+    box-shadow: 0px 6px 25px rgba(3, 126, 140, 0.6);
+    border-radius: 9px;
+    color: #fff;
+    transition: .3s;
+
+}
+
+.btn{
+    padding: 12px 20px;
+    border-radius: 9px;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    &-blue{
+        background: #037E8C;
+        color: #fff;
+    }
+    &-empy{
+        color: #037E8C;
+        border: #037E8C solid 1px;
+    }
+}
+
+button{
+    border:none;
+    background: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.bg{
+    background: url('../img/hero/bg.png') no-repeat center / cover;
+}

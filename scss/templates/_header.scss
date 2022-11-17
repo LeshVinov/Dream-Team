@@ -1,0 +1,56 @@
+.header{
+    &-items{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .num-but {
+        display: block;
+        max-width: 207px;
+        .num{
+            margin-bottom: 10px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        .phone{
+            &-link,
+            &-btn{
+                color: #fff;
+            }
+            &-link{
+                font-weight: 600;
+                font-size: 20px;
+            }
+            &-btn{
+                background: rgba(255, 255, 255, 0.4);
+            }
+            &-img{
+                margin-right: 13px;
+            }
+        }
+    }
+}
+
+.navigation{
+    &-ul{
+        display: flex;
+    }
+    &-item{
+        &:not(:last-child){
+            margin-right: 30px;
+        }
+    }
+    &-button{
+        text-transform: uppercase;
+        color: #fff;
+        transition: .3s;
+        &__footer{
+            color: #000;
+        }
+        &:hover{
+            color: #037E8C;
+        }
+    }
+}
+

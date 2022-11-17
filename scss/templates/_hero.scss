@@ -1,0 +1,22 @@
+.hero{
+    padding: 80px 0 200px;
+    &-items{
+        max-width: 650px;
+        color: #fff;
+    }
+    &-title{
+        font-weight: 800;
+        font-size: 70px;
+        margin-bottom: 40px;
+    }
+    &-subtitle{
+        font-weight: 500;
+        font-size: 24px;
+        margin-bottom: 80px;
+    }
+    &-btn{
+        &__img{
+            margin-left: 32px;
+        }
+    }
+}

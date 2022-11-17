@@ -1,0 +1,38 @@
+.swiper{
+    padding: 100px 0;
+    &-slide{
+        padding: 0 20px
+    }
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    background: #037E8C;
+}
+
+.route{
+    &-slide{
+        padding-bottom: 50px;
+    }
+}
+.photo{
+    padding: 50px 0;
+    padding-bottom: 10px;
+    &-slide{
+        margin-bottom: 0;
+        &__img{
+            max-width: 385px;
+            &:not(:last-child){
+                margin-right: 0;
+            }
+        }
+    }
+    .swiper{
+        &-slide{
+            display: flex;
+            justify-content: space-between;
+        }
+        &-wrapper{
+            padding-bottom: 40px;
+        }
+    }
+}

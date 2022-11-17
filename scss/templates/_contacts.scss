@@ -1,0 +1,47 @@
+.contacts{
+    padding: 35px;
+    &-items{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-item{
+        &__left{
+            border-top: 4px solid #037E8C;
+            max-width: 630px;
+            padding-top: 15px;
+            &-text{
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 151.19%;
+                margin-bottom: 15px;
+            }
+            &-title{
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 140.4%;
+            }
+            &-txt{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 151.19%;
+            }
+            &-img{
+                margin-right: 15px;
+                max-width: 45px;
+            }
+            &-info{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-bottom: 15px;
+                &__item{
+                    display: flex;
+                    align-items: center;
+                    max-width: 240px;
+                    width: 100%;
+                    margin: 35px 55px 0 0;
+                }
+            }
+        }
+    }
+}

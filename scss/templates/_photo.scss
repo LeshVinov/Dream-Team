@@ -1,0 +1,35 @@
+.photo{
+    padding: 50px 0;
+    &-title{
+        margin-bottom: 40px;
+    }
+    &-slide{
+        margin-bottom: 55px;
+        &__img{
+            max-width: 410px;
+            border-radius: 10px ;
+            &:not(:last-child){
+                margin-right: 30px;
+            }
+        }
+    }
+    &-dots{
+        display: flex;
+        justify-content: center;
+    }
+    &-dot{
+        content: '';
+        width: 10px;
+        height: 10px;
+        background: #121214;
+        border-radius: 50px;
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        &-active {
+            background: #037E8C;
+        }
+    }
+}

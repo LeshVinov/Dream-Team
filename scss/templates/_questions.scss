@@ -1,0 +1,48 @@
+.questions{
+    padding: 50px 0;
+    &-title{
+        margin-bottom: 100px;
+    }
+    &-items{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-item{
+        &__title{
+            font-style:normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+        }
+        &__subtitle{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 17px;
+        }
+        &__right{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            max-width: 380px;
+        }
+        &__left{
+            display: block;
+        }
+    }
+    &-img{
+        margin: 0 auto;
+        max-width: 87px;
+    }
+    &-form{
+        display: block;
+    }
+    &-input,
+    &-btn{
+        max-width: 608px;
+        width: 100%;
+    }
+    &-input{
+        margin-bottom: 20px;
+    }
+}
