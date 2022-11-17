@@ -500,6 +500,12 @@ button {
 
 .header .num-but .phone-btn {
   background: rgba(255, 255, 255, 0.4);
+  -webkit-transition: background .3s;
+  transition: background .3s;
+}
+
+.header .num-but .phone-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .header .num-but .phone-img {
@@ -552,8 +558,18 @@ button {
   margin-bottom: 80px;
 }
 
+.hero-btn {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
 .hero-btn__img {
   margin-left: 32px;
+}
+
+.hero-btn:hover {
+  -webkit-filter: drop-shadow(0 0 0.75rem #037E8C);
+          filter: drop-shadow(0 0 0.75rem #037E8C);
 }
 
 .benefits {
@@ -721,6 +737,27 @@ button {
 
 .routes .route-dot-active {
   background: #037E8C;
+}
+
+.routes .btn-empy {
+  -webkit-transition: background .3s;
+  transition: background .3s;
+}
+
+.routes .btn-empy:hover {
+  background: #037E8C;
+  color: #fff;
+}
+
+.routes .btn-blue {
+  -webkit-transition: background .3s;
+  transition: background .3s;
+}
+
+.routes .btn-blue:hover {
+  background: transparent;
+  border: 1px solid #037E8C;
+  color: #037E8C;
 }
 
 .choice {
@@ -940,6 +977,18 @@ button {
 .questions-input, .questions-btn {
   max-width: 608px;
   width: 100%;
+}
+
+.questions-btn {
+  border: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.questions-btn:hover {
+  background: transparent;
+  border: 1px solid #037E8C;
+  color: #037E8C;
 }
 
 .questions-input {

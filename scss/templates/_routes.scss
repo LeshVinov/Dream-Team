@@ -97,4 +97,19 @@
             }
         }
     }
+    .btn-empy{
+        transition: background .3s;
+        &:hover{
+            background: #037E8C;
+            color: #fff;
+        }
+    }
+    .btn-blue{
+        transition: background .3s;
+        &:hover{
+            background: transparent;
+            border: 1px solid #037E8C;
+            color: #037E8C;
+        }
+    }
 }
