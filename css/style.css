@@ -414,7 +414,6 @@ input:focus {
 }
 
 input[type="submit"] {
-  padding: 25px;
   background: #037E8C;
   -webkit-box-shadow: 0px 6px 25px rgba(3, 126, 140, 0.6);
           box-shadow: 0px 6px 25px rgba(3, 126, 140, 0.6);
@@ -1126,6 +1125,336 @@ button {
   font-size: 16px;
   line-height: 126.69%;
   color: #787878;
+}
+
+.modal {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 682%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+
+.modal__window {
+  position: absolute;
+  top: 120px;
+  left: 16%;
+  max-width: 1300px;
+  width: 100%;
+  padding-top: 40px;
+  background: white;
+  margin: auto;
+}
+
+.modal-close__button {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  background: url("../img/modal/close.svg") no-repeat center;
+  z-index: 2;
+}
+
+.modal-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.modal .route {
+  margin-bottom: 50px;
+}
+
+.modal .route-slide {
+  padding-top: 50px;
+  max-width: 1160px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal .route-slide__left {
+  max-width: 550px;
+}
+
+.modal .route-slide__title {
+  font-weight: 600;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 31px;
+}
+
+.modal .route-slide__title-route {
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.modal .route-slide__title-img {
+  margin-left: 20px;
+}
+
+.modal .route-slide__text {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.modal .route-slide__subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.modal .route-slide-text {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.modal .route-slide__info {
+  margin-bottom: 35px;
+}
+
+.modal .route-slide__info-bold {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.modal .route-slide__info-img {
+  max-width: 17px;
+}
+
+.modal .route-slide__info-txt {
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.modal .route-slide__info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal .route-slide__info-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.modal .route-slide .slide-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal .route-slide .slide-btn {
+  padding: 17px 36px;
+}
+
+.modal .route-slide .slide-btn:not(:last-child) {
+  margin-right: 20px;
+}
+
+.modal .route-slide__right-img {
+  width: 457px;
+}
+
+.modal .route-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal .route-dot {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: #121214;
+  border-radius: 50px;
+}
+
+.modal .route-dot:not(:last-child) {
+  margin-right: 10px;
+}
+
+.modal .route-dot-active {
+  background: #037E8C;
+}
+
+.modal .btn-empy {
+  -webkit-transition: background .3s;
+  transition: background .3s;
+}
+
+.modal .btn-empy:hover {
+  background: #037E8C;
+  color: #fff;
+}
+
+.modal .btn-blue {
+  -webkit-transition: background .3s;
+  transition: background .3s;
+}
+
+.modal .btn-blue:hover {
+  background: transparent;
+  border: 1px solid #037E8C;
+  color: #037E8C;
+}
+
+.modal-excursion {
+  margin-bottom: 60px;
+}
+
+.modal-excursion__title {
+  margin-bottom: 27px;
+  font-size: 24px;
+}
+
+.modal-excursion__text {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.modal-excursion__text:last-of-type {
+  margin-bottom: 50px;
+}
+
+.modal-excursion-price__title {
+  font-size: 24px;
+  margin-bottom: 45px;
+}
+
+.modal-excursion-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.modal-excursion-list__item {
+  background: #F4F4F4;
+  border-radius: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px;
+  padding-bottom: 9px;
+  position: relative;
+}
+
+.modal-excursion-item__img {
+  border-radius: 9px 9px 0 0;
+  margin-bottom: 16px;
+}
+
+.modal-excursion-item__info {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  background: url("../img/modal/info.svg") no-repeat center;
+  border: none;
+  width: 33px;
+  height: 33px;
+}
+
+.modal-excursion-item__title {
+  margin-bottom: 3px;
+}
+
+.modal-excursion-item__price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #037E8C;
+}
+
+.modal-form {
+  padding-top: 55px;
+  padding-bottom: 98px;
+  background: url("../img/modal/form-bg.jpg");
+}
+
+.modal-form-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-form__title {
+  margin-bottom: 32px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.modal-form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-form-group__text {
+  color: #121214;
+  font-size: 14px;
+  margin-bottom: 11px;
+}
+
+.modal-form-group__input {
+  max-width: 350px;
+  height: 46px;
+}
+
+.modal-form-group__input--date {
+  background: #fff url("../img/modal/calendar.svg") no-repeat 5px;
+}
+
+.modal-form-group__input--phone {
+  background: #fff url("../img/modal/phone.svg") no-repeat 5px;
+}
+
+.modal-form-group__input--name {
+  background: #fff url("../img/modal/user.svg") no-repeat 5px;
+}
+
+.modal-form__button {
+  margin-top: 12px;
+  border: none;
+  padding: 14px 29px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.modal-form__button:hover {
+  padding: 13px 28px;
+  background: #fff;
+  border: 1px solid #037E8C;
+  color: #037E8C;
 }
 
 .swiper {

@@ -1,0 +1,252 @@
+.modal {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 682%;
+    top: 0;
+    left: 0;
+    background: rgba($color: #000000, $alpha: 0.8);
+    z-index: 2;
+    &__window{
+        position: absolute;
+        top: 120px;
+        left: 16%;
+        max-width: 1300px;
+        width: 100%;
+        padding-top: 40px;
+        background: white;
+        margin: auto;
+    }
+    &-close__button{
+        position: absolute;
+        top: -50px;
+        right: 0;
+        width: 32px;
+        height: 32px;
+        background: url('../img/modal/close.svg') no-repeat center;
+        z-index: 2;
+    }
+    &-container{
+        max-width: 1000px;
+        margin: auto;
+    }
+    .route{
+        margin-bottom: 50px;
+        &-slide{
+            padding-top: 50px;
+            max-width: 1160px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            &__left{
+                max-width: 550px;
+            }
+            &__title{
+                font-weight: 600;
+                font-size: 36px;
+                text-transform: uppercase;
+                margin-bottom: 31px;
+                &-route{
+                    font-weight: 600;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    margin-bottom: 16px;
+                }
+                &-img{
+                    margin-left: 20px;
+                }
+            }
+            &__text{
+                font-weight: 400;
+                font-size: 14px;
+            }
+            &__subtitle{
+                font-weight: 700;
+                font-size: 24px;
+                text-transform: uppercase;
+                margin-bottom: 40px;
+            }
+            &-text{
+                font-weight: 400;
+                font-size: 14px;    
+            }
+            &__info{
+                margin-bottom: 35px;
+                &-bold{
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+                &-img{
+                    max-width: 17px;
+                }
+                &-txt{
+                    font-weight: 400;
+                    font-size: 16px;
+                    margin-left: 20px;
+                }
+                &-item{
+                    display: flex;
+                    align-items: center;
+                    &:not(:last-child){
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+            .slide{
+                &-buttons{
+                    display: flex;
+                }
+                &-btn{
+                    padding: 17px 36px;
+                    &:not(:last-child){
+                        margin-right: 20px;
+                    }
+                }
+            }
+            &__right{
+                &-img{
+                    width: 457px;
+                }
+            }
+        }
+        &-dots{
+            display: flex;
+            justify-content: center;
+        }
+        &-dot{
+            content: '';
+            width: 10px;
+            height: 10px;
+            background: #121214;
+            border-radius: 50px;
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+            &-active{
+                background: #037E8C;
+            }
+        }
+    }
+    .btn-empy{
+        transition: background .3s;
+        &:hover{
+            background: #037E8C;
+            color: #fff;
+        }
+    }
+    .btn-blue{
+        transition: background .3s;
+        &:hover{
+            background: transparent;
+            border: 1px solid #037E8C;
+            color: #037E8C;
+        }
+    }
+    &-excursion{
+        margin-bottom: 60px;
+        &__title{
+            margin-bottom: 27px;
+            font-size: 24px;
+        }
+        &__text{
+            margin-bottom: 30px;
+            font-size: 16px;
+            &:last-of-type{
+                margin-bottom: 50px;
+            }
+        }
+        &-price{
+            &__title{
+                font-size: 24px;
+                margin-bottom: 45px;
+            }
+        }
+        &-list{
+            display: flex;
+            flex-wrap: wrap;
+            &__item{
+                background: #F4F4F4;
+                border-radius: 9px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 15px;
+                padding-bottom: 9px;
+                position: relative;
+            }
+        }
+        &-item{
+            &__img{
+                border-radius: 9px 9px 0 0;
+                margin-bottom: 16px;
+            }
+            &__info{
+                position: absolute;
+                top: 6px;
+                left: 8px;
+                background: url('../img/modal/info.svg') no-repeat center;
+                border: none;
+                width: 33px;
+                height: 33px;
+            }
+            &__title{
+                margin-bottom: 3px;
+            }
+            &__price{
+                font-size: 20px;
+                font-weight: bold;
+                color: #037E8C;
+            }
+        }
+    }
+    &-form{
+        padding-top: 55px;
+        padding-bottom: 98px;
+        background: url('../img/modal/form-bg.jpg');
+        &-content{
+            display: flex;
+        }
+        &__title{
+            margin-bottom: 32px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        &-group{
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            &__text{
+                color: #121214;
+                font-size: 14px;
+                margin-bottom: 11px;
+            }
+            &__input{
+                max-width: 350px;
+                height: 46px;
+                &--date{
+                    background: #fff url('../img/modal/calendar.svg') no-repeat 5px;
+                }
+                &--phone{
+                    background: #fff url('../img/modal/phone.svg') no-repeat 5px;
+                }
+                &--name{
+                    background: #fff url('../img/modal/user.svg') no-repeat 5px;
+                }
+
+            }
+        }
+        &__button{
+            margin-top: 12px;
+            border: none;
+            padding: 14px 29px;
+            transition: all .2s;
+            &:hover{
+                padding: 13px 28px;
+                background: #fff;
+                border: 1px solid #037E8C;
+                color: #037E8C;
+            }
+        }
+    }
+}
