@@ -1157,11 +1157,24 @@ button {
   height: 32px;
   background: url("../img/modal/close.svg") no-repeat center;
   z-index: 2;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.modal-close__button:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .modal-container {
   max-width: 1000px;
   margin: auto;
+}
+
+.modal-open {
+  display: block;
 }
 
 .modal .route {
@@ -1370,6 +1383,7 @@ button {
 }
 
 .modal-excursion-item__info {
+  display: none;
   position: absolute;
   top: 6px;
   left: 8px;

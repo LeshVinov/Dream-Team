@@ -13,3 +13,20 @@ const routesSwiper = new Swiper('.swiper', {
       prevEl: '.swiper-button-prev',
     }
 });
+// слайдер
+
+const modal = document.querySelector('.modal');
+const modalOpenButtons = document.querySelectorAll('.slide-btn-lock')
+const modalCloseButton = document.querySelector('.modal-close__button')
+
+
+
+const toggleModal = function() {
+  modal.classList.toggle('modal-open');
+}
+
+modalOpenButtons.forEach(modalOpenButton => {
+  modalOpenButton.addEventListener('click', toggleModal
+)});
+modalCloseButton.addEventListener('click', toggleModal)
+// модалка

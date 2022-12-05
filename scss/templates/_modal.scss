@@ -25,10 +25,17 @@
         height: 32px;
         background: url('../img/modal/close.svg') no-repeat center;
         z-index: 2;
+        transition: transform .3s;
+        &:hover{
+            transform: rotate(90deg);
+        }
     }
     &-container{
         max-width: 1000px;
         margin: auto;
+    }
+    &-open{
+        display: block;
     }
     .route{
         margin-bottom: 50px;
@@ -181,6 +188,7 @@
                 margin-bottom: 16px;
             }
             &__info{
+                display: none;
                 position: absolute;
                 top: 6px;
                 left: 8px;
